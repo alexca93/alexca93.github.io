@@ -1,10 +1,327 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<title>Alexandre Cahay</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Alexandre Cahay">
+    <meta name="description" content="Alexandre Cahay - Portfolio d'un developpeur web full stack sur Paris">
+
+    <title>Alexandre Cahay - Portfolio d'un développeur web</title>
+
+    <meta name="keywords" content="alexandre, cahay, alexandre cahay, portfolio, web, developpement web, dev web, informatique, profil, developpeur paris">
+    <meta name="revisit-after" content="7 days">
+    <meta name="robots" content="all">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="identifier-url" content="http://cahay.net">
+    <meta name="resource-type" content="document">
+    <meta name="copyright" content="Alexandre Cahay">
+    <meta name="rating" content="general">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Balises Facebook -->
+    <meta property="og:title" name="og:title" content="Alexandre Cahay - Portfolio" >
+    <meta property="og:description" name="og:description" content="Alexandre Cahay - Portfolio d'un developpeur web full stack sur Paris">
+    <meta property="og:url" name="og:url" content="http://cahay.net">
+    <meta property="og:type" name="og:type" content="website">
+    <meta property="og:site_name" name="og:site_name" content="Alexandre Cahay - Portfolio">
+    <meta property="og:image" name="og:image" content="http://cahay.net/img/cahay.png">
+    <meta property="og:locale" name="og:locale" content="fr">
+    <!-- Balises Twitter -->
+    <meta name="twitter:title" content="Alexandre Cahay - Portfolio" >
+    <meta name="twitter:description" content="Alexandre Cahay - Portfolio d'un developpeur web full stack sur Paris">
+    <meta name="twitter:url" content="http://cahay.net">
+    <meta name="twitter:card" content="website">
+    <meta name="twitter:site" content="Alexandre Cahay - Portfolio">
+    <meta name="twitter:image" content="http://cahay.net/img/cahay.png">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/semantic-custom.min.css" rel="stylesheet">
+    <style type="text/css">
+        html {
+            font-size: initial;
+        }
+        .newProject {
+            display: none;
+        }
+        .spin {
+            -webkit-animation: spin 1000ms infinite linear;
+            animation: spin 1000ms infinite linear;
+        }
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+        }
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(359deg);
+                transform: rotate(359deg);
+            }
+        }
+    </style>
 </head>
 <body>
-	<h1>Alexandre Cahay - Test de github pages</h1>
-	<p>Bonjour</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    <a href="CV_CAHAY_ALEXANDRE_2017.pdf" target="_blank" title="Voir mon CV">Alexandre Cahay</a>
+                    <small>Developpeur Web</small>
+                    <a class="btn btn-primary pull-right addProject" href="#" title="Ajouter mon projet !">Mon Projet &nbsp;<span class="glyphicon glyphicon-plus"></span></a>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row newProject">
+            <div class="col-md-12">
+                <form class="form-horizontal ui form" action="mail.php">
+                    <div class="form-group">
+                        <label for="sujet" class="col-sm-2 control-label">Titre / Sujet</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" name="sujet" id="sujet" placeholder="Titre" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email de contact" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="skills" class="col-sm-2 control-label">Compétences</label>
+                        <div class="col-sm-10">
+                            <select multiple="" name="skills" id="skills" class="ui fluid normal dropdown">
+                                <option value="">Skills</option>
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="js">Javascript</option>
+                                <option value="php">PHP</option>
+                                <option value="meteor">Meteor</option>
+                                <option value="node">NodeJS</option>
+                                <option value="extjs">ExtJs</option>
+                                <option value="ruby">Ruby</option>
+                                <option value="rails">Ruby on Rails</option>
+                                <option value="wp">Wordpress</option>
+                                <option value="ux">UX</option>
+                                <option value="managment">Managment</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="col-sm-2 control-label">Description</label>
+                        <div class="col-sm-10">
+                            <textarea name="" class="form-control" name="message" id="message" placeholder="té bo" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <hr class="newProject">
+
+        <div class="row">
+            <div class="col-md-7">
+                <a target="_blank" href="#">
+                    <img class="img-responsive" src="img/baga.png" alt="Alexandre Cahay - Projet O'Baga - Développement Web">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>O'Baga</h3>
+                <h4>Avril 2017 - <strong>Magento</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+                <a class="btn btn-primary" target="_blank" href="https://github.com/alexca93/HETIC-Magento">Voir sur Github</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <a target="_blank" href="lab/usa/index.html">
+                    <img class="img-responsive" src="img/usa.png" alt="Alexandre Cahay - Projet USA - Développement Web">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>US Elections</h3>
+                <h4>Mars 2017 - <strong>Animation JS</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
+                <a class="btn btn-primary" target="_blank" href="lab/usa/index.html">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <a target="_blank" href="#">
+                    <img class="img-responsive" src="img/bonsbails.png" alt="Alexandre Cahay - Projet Les Bons Bails - Développement Web">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Les Bons Bails</h3>
+                <h4>Fevrier 2017 - <strong>Ruby on Rails</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+                <!-- <a class="btn btn-primary" target="_blank" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <a target="_blank" href="#">
+                    <img class="img-responsive" src="img/void.png" alt="Alexandre Cahay - Projet Ping Pong Cup - Développement Web">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Ping Pong Cup</h3>
+                <h4>Janvier 2017 - <strong>Symfony 2</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+                <a class="btn btn-primary" target="_blank" href="https://github.com/alexca93/hetic-pingpongcup">Voir sur GitHub</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <a target="_blank" href="#">
+                    <img class="img-responsive" src="img/void.png" alt="Alexandre Cahay - Projet Ideabox - Développement Web">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Ideabox</h3>
+                <h4>Decembre 2016 - <strong>MeteorJs</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
+                <a class="btn btn-primary" target="_blank" href="https://github.com/alexca93/meteor-ideabox">Voir sur GitHub</a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <a target="_blank" href="works/roomSaveurs/index.html">
+                    <img class="img-responsive" src="img/void.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Room Saveurs</h3>
+                <h4>Octobre 2016 - <strong>Symfony 2</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+                <a class="btn btn-primary" target="_blank" href="https://github.com/alexca93/hetic-roomsaveurs">Voir sur GitHub</span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+
+            <div class="col-md-7">
+                <a target="_blank" href="http://www.lesflibustiers.fr/">
+                    <img class="img-responsive" src="img/flibustiers.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Les Flibustiers de l'Imaginaire</h3>
+                <h4>Juin 2016 - <strong>Wordpress</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
+                <a class="btn btn-primary" target="_blank" href="http://www.lesflibustiers.fr/">Voir le projet <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <a target="_blank" href="http://www.leponyme.fr/">
+                    <img class="img-responsive" src="img/eponyme.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Ecole de théâtre l'Eponyme</h3>
+                <h4>Mai 2016 - <strong>PHP</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+                <a class="btn btn-primary" target="_blank" href="http://www.leponyme.fr/">Voir le projet <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <a target="_blank" href="lab/onyx/index.html">
+                    <img class="img-responsive" src="img/onyx.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Onyx</h3>
+                <h4>Mars 2016 - <strong>PHP</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+                <a class="btn btn-primary" target="_blank" href="lab/onyx/index.html">Voir le projet <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <a target="_blank" href="lab/asteroides/index.html">
+                    <img class="img-responsive" src="img/asteroides.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Asteroides !</h3>
+                <h4>Janvier 2016 - <strong>JS</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+                <a class="btn btn-primary" target="_blank" href="lab/asteroides/index.html">Voir le projet <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-7">
+                <a target="_blank" href="lab/paint/paint.php">
+                    <img class="img-responsive" src="img/paint.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Paint 2.0</h3>
+                <h4>Decembre 2015 - <strong>PHP</strong></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quo, minima, inventore voluptatum saepe quos nostrum provident ex quisquam hic odio repellendus atque porro distinctio quae id laboriosam facilis dolorum.</p>
+                <a class="btn btn-primary" target="_blank" href="lab/paint/paint.php">Voir le projet <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+
+        <hr>
+
+        <footer style="margin: 50px 0">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; 2017 - Alexandre Cahay - <a href="CV_CAHAY_ALEXANDRE_2017.pdf" target="_blank" title="CV Alexandre Cahay">CV</a> - <a href="mailto:alexandre@cahay.net?subject=feedback">Contact</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/semantic-custom.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
